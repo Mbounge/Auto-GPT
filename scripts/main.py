@@ -73,6 +73,7 @@ def print_assistant_thoughts(assistant_reply):
     global cfg
     try:
         # Parse and print Assistant response
+        print(f'#### Assistant Reply: {assistant_reply}') 
         assistant_reply_json = fix_and_parse_json(assistant_reply)
 
         # Check if assistant_reply_json is a string and attempt to parse it into a JSON object
@@ -365,6 +366,7 @@ while True:
             else:
                 user_input = console_input
                 command_name = "human_feedback"
+                print('Clicked this one')
                 break
 
         if user_input == "GENERATE NEXT COMMAND JSON":

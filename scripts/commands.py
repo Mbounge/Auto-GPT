@@ -244,6 +244,8 @@ def shutdown():
     print("Shutting down...")
     quit()
 
+def ask_user():
+    pass
 
 def start_agent(name, task, prompt, model=cfg.fast_llm_model):
     """Start an agent with a given name, task, and prompt"""
